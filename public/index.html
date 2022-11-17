@@ -45,14 +45,31 @@
                   <a href="#hero" class="active">Home</a>
                 </li>
                 <li class="flex gap-[5px] items-center">
-                  <a href="">Community</a>
+                  <button id="dropdownDefault" data-dropdown-toggle="dropdown">Community</button>
                   <img src="../assets/CaretDown.png" alt="" />
+                  <!-- Dropdown menu -->
+                  <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">NewsFeed</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Friends</a>
+                      </li>
+                      <li>
+                        <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Forums</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li>
                   <a href="#blog">Blog</a>
                 </li>
                 <li>
-                  <a href="">Events</a>
+                  <a href="#">Events</a>
                 </li>
               </ul>
             </div>
@@ -65,9 +82,7 @@
                   <input type="text" name="" id="" placeholder="Search Here..." class="focus:ring-transparent w-20 placeholder:text-xs bg-transparent border-none px-0" />
                 </form>
               </div>
-              <div class="button-box bg-blue-600 rounded-2xl">
-                <button type="submit" class="px-11 py-[18px] text-xs text-white">Log In</button>
-              </div>
+              <button type="submit" class="button-box bg-blue-600 rounded-2xl hover:bg-blue-600/80 duration-200 px-11 py-[18px] text-xs text-white">Log In</button>
             </div>
           </div>
         </div>
@@ -80,15 +95,15 @@
         <!-- left -->
         <div class="left">
           <div class="button-box-top">
-            <button class="text-blue-600 px-[30px] py-3 text-xs rounded-2xl bg-[#217BF4]/10">Netbook community</button>
+            <button class="text-blue-600 px-[30px] py-3 text-xs rounded-2xl bg-[#217BF4]/10 hover:bg-blue-400 hover:text-blue-100 duration-200">Netbook community</button>
           </div>
           <div class="text-hero">
             <p class="text-[56px] text-[#0A093D] font-bold leading-[56px] mt-5">Your Solutions For Community!</p>
             <p class="text-lg text-[#656464] mt-[18px] max-w-lg">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
           </div>
           <div class="button-box-bottom mt-[42px]">
-            <button class="px-[42px] py-6 text-white bg-blue-500 rounded-2xl text-sm leading-[14px] border mr-[18px]">About More</button>
-            <button class="px-[42px] py-6 text-blue-600 bg-white rounded-2xl text-sm leading-[14px] border-blue-400 border">Invite Friend</button>
+            <button class="px-[42px] py-6 text-blue-600 bg-white rounded-2xl text-sm leading-[14px] border-blue-400 border hover:bg-blue-500 hover:text-white duration-200 mr-[18px]">About More</button>
+            <button class="px-[42px] py-6 text-blue-600 bg-white rounded-2xl text-sm leading-[14px] border-blue-400 border hover:bg-blue-500 hover:text-white duration-200">Invite Friend</button>
           </div>
         </div>
         <div class="img-hero">
@@ -149,7 +164,7 @@
           <div class="body-text">
             <p class="text-[#8C8C8C] text-base font-normal mt-10 w-[274px]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
           </div>
-          <a class="bottom flex gap-2 mt-10" href="#">
+          <a class="bottom flex gap-2 mt-10 items-center hover:gap-5 duration-200" href="#">
             <p class="hover:text-[#217BF4] text-[#4A4A56] text-base leading-4 font-medium">Join Our Community</p>
             <img src="../assets/icon/ArrowRight.svg" alt="" />
           </a>
@@ -168,7 +183,7 @@
           <div class="body-text">
             <p class="text-[#8C8C8C] text-base font-normal mt-10 w-[274px]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
           </div>
-          <a class="bottom flex gap-2 mt-10" href="#">
+          <a class="bottom flex gap-2 mt-10 items-center hover:gap-5 duration-200" href="#">
             <p class="hover:text-[#217BF4] text-[#4A4A56] text-base leading-4 font-medium">Go To Awards</p>
             <img src="../assets/icon/ArrowRightBlack.svg" alt="" />
           </a>
@@ -184,7 +199,7 @@
             <p class="text-[#656464] text-base leading-7 font-normal mt-[18px]">The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.</p>
           </div>
           <div class="bottom-button mt-[38px]">
-            <button class="flex bg-[#217BF4] rounded-[14px] gap-5 font-medium text-sm leading-[14px] text-white py-5 px-[36px]">
+            <button class="flex bg-[#217BF4] items-center hover:gap-7 hover:pr-7 hover:bg-[#217BF4]/80 rounded-[14px] gap-5 font-medium text-sm leading-[14px] text-white py-5 px-[36px] duration-200">
               Discover me
               <img src="../assets/icon/ArrowRightWhite.svg" alt="" />
             </button>
@@ -352,7 +367,7 @@
               <div class="text">
                 <p class="text-[#2F2C4A] text-xl leading-8 font-semibold">It Does Not Matter Hows Slowly go as Long</p>
                 <div class="button-bottom flex gap-2 mt-6 items-center">
-                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-150">Continue Reading</a>
+                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-200">Continue Reading</a>
                   <img src="../assets/icon/ArrowRight.svg" alt="" class="w-[10px] h-[10px]" />
                 </div>
               </div>
@@ -369,7 +384,7 @@
               <div class="text">
                 <p class="text-[#2F2C4A] text-xl leading-8 font-semibold">Netbook Network Added New Photo Filter</p>
                 <div class="button-bottom flex gap-2 mt-6 items-center">
-                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-150">Continue Reading</a>
+                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-200">Continue Reading</a>
                   <img src="../assets/icon/ArrowRight.svg" alt="" class="w-[10px] h-[10px]" />
                 </div>
               </div>
@@ -386,7 +401,7 @@
               <div class="text">
                 <p class="text-[#2F2C4A] text-xl leading-8 font-semibold">We Optimised Netbooks Better Navigation</p>
                 <div class="button-bottom flex gap-2 mt-6 items-center">
-                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-150">Continue Reading</a>
+                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-200">Continue Reading</a>
                   <img src="../assets/icon/ArrowRight.svg" alt="" class="w-[10px] h-[10px]" />
                 </div>
               </div>
@@ -447,7 +462,7 @@
                 placeholder="Email Address"
                 class="lg:focus:ring-transparent focus:ring-white/[0.85] placeholder:text-[#717179] border border-white/[0.85] lg:border-none py-[18px] px-6 bg-transparent w-full placeholder:text-sm placeholder:leading-3 text-sm leading-3 font-normal rounded-xl"
               />
-              <button type="submit" class="bg-white text-[#2B2B39] py-[18px] px-6 rounded-xl border border-white/[0.85] font-medium text-base leading-4 lg:w-auto w-full">Subscribe</button>
+              <button type="submit" class="bg-white text-[#2B2B39] py-[18px] px-6 rounded-xl border border-white/[0.85] font-medium text-base leading-4 lg:w-auto w-full hover:bg-white/70 hover:text-black">Subscribe</button>
             </form>
           </div>
         </div>
