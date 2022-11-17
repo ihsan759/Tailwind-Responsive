@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,7 +17,7 @@
   <body>
     <!-- header -->
     <nav id="header" class="border-b-2 pb-[18px] w-full top-0 fixed bg-white/90 backdrop-blur z-50">
-      <div class="container max-md:px-5 flex flex-wrap lg:flex-nowrap pt-[30px] lg:gap-[70px] items-center justify-between gap-5 px-5">
+      <div class="container lg:px-0 flex flex-wrap lg:flex-nowrap pt-[30px] lg:gap-[70px] items-center justify-between gap-5 px-5">
         <div class="img-box">
           <img src="../assets/logo.png" alt="" />
         </div>
@@ -91,18 +91,18 @@
 
     <!-- hero -->
     <section id="hero" class="bg-gradient-to-br from-[#ffffff] to-[#d4e7fe] py-[100px]">
-      <div class="container max-md:px-5 flex flex-wrap-reverse lg:flex-nowrap pt-[72px] justify-center lg:justify-between items-center gap-5">
+      <div class="container px-5 lg:px-0 flex flex-wrap-reverse lg:flex-nowrap pt-[72px] justify-center lg:justify-between items-center gap-5">
         <!-- left -->
         <div class="left">
           <div class="button-box-top">
             <button class="text-blue-600 px-[30px] py-3 text-xs rounded-2xl bg-[#217BF4]/10 hover:bg-blue-400 hover:text-blue-100 duration-200">Netbook community</button>
           </div>
           <div class="text-hero">
-            <p class="text-[56px] text-[#0A093D] font-bold leading-[56px] mt-5">Your Solutions For Community!</p>
+            <p class="text-[56px] text-[#0A093D] font-bold leading-[56px] mt-5 max-[320px]:text-4xl">Your Solutions For Community!</p>
             <p class="text-lg text-[#656464] mt-[18px] max-w-lg">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
           </div>
-          <div class="button-box-bottom mt-[42px]">
-            <button class="px-[42px] py-6 text-blue-600 bg-white rounded-2xl text-sm leading-[14px] border-blue-400 border hover:bg-blue-500 hover:text-white duration-200 mr-[18px]">About More</button>
+          <div class="button-box-bottom mt-[42px] flex gap-[18px] flex-wrap lg:flex-nowrap">
+            <button class="px-[42px] py-6 text-blue-600 bg-white rounded-2xl text-sm leading-[14px] border-blue-400 border hover:bg-blue-500 hover:text-white duration-200">About More</button>
             <button class="px-[42px] py-6 text-blue-600 bg-white rounded-2xl text-sm leading-[14px] border-blue-400 border hover:bg-blue-500 hover:text-white duration-200">Invite Friend</button>
           </div>
         </div>
@@ -114,8 +114,8 @@
 
     <!-- about -->
     <section id="about">
-      <div class="container max-md:px-5 flex mt-[34px] flex-wrap-reverse gap-5 lg:flex-nowrap items-center justify-center lg:justify-between pt-24 pb-[34px]">
-        <div class="text w-[406px]">
+      <div class="container px-5 lg:px-0 flex mt-[34px] flex-wrap-reverse gap-5 lg:flex-nowrap items-center justify-center lg:justify-between pt-24 pb-[34px]">
+        <div class="text lg:w-[406px] w-auto">
           <p class="text-[#217BF4] text-lg leading-[18px]">Whats Netboks?</p>
           <p class="text-[#0A093D] text-4xl leading-[48px] mt-[10px] font-bold">Why Join to Netbook Social Network?</p>
           <p class="text-[#656464] font-normal text-base leading-7 mt-4">Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</p>
@@ -134,7 +134,8 @@
             </div>
           </div>
         </div>
-        <div class="image flex gap-7 items-center">
+
+        <div class="image flex flex-wrap lg:flex-nowrap justify-center lg:justify-between gap-7 items-center">
           <img src="../assets/video.png" alt="" class="h-[368px]" />
           <div class="img-vertical flex flex-col">
             <img src="../assets/laptop.png" alt="" class="h-[238px]" />
@@ -146,7 +147,7 @@
 
     <!-- Achievement -->
     <section id="achievement" class="mt-5">
-      <div class="container max-md:px-5 flex flex-wrap-reverse lg:flex-nowrap gap-5 lg:justify-between justify-center pt-[74px] pb-[84px]">
+      <div class="container px-5 lg:px-0 flex flex-wrap-reverse lg:flex-nowrap gap-5 lg:justify-between justify-center pt-[74px] pb-[84px]">
         <!-- Achievements -->
         <div class="card-achievement pt-[42px] pb-10 pl-11 pr-[18px] hover:shadow-lg duration-200 border rounded-[14px] bg-white">
           <div class="header flex gap-3 items-center">
@@ -162,7 +163,7 @@
             <p class="font-semibold text-base leading-[18px]"><span class="text-[#217BF4]">+836k</span> Members</p>
           </div>
           <div class="body-text">
-            <p class="text-[#8C8C8C] text-base font-normal mt-10 w-[274px]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+            <p class="text-[#8C8C8C] text-base font-normal mt-10 lg:w-[274px] max-w-[694x]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
           </div>
           <a class="bottom flex gap-2 mt-10 items-center hover:gap-5 duration-200" href="#">
             <p class="hover:text-[#217BF4] text-[#4A4A56] text-base leading-4 font-medium">Join Our Community</p>
@@ -181,7 +182,7 @@
             <p class="font-semibold text-base leading-[18px]">Best of <span class="text-[#217BF4]">2021</span> on Github</p>
           </div>
           <div class="body-text">
-            <p class="text-[#8C8C8C] text-base font-normal mt-10 w-[274px]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+            <p class="text-[#8C8C8C] text-base font-normal mt-10 lg:w-[274px] max-w-[694x]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
           </div>
           <a class="bottom flex gap-2 mt-10 items-center hover:gap-5 duration-200" href="#">
             <p class="hover:text-[#217BF4] text-[#4A4A56] text-base leading-4 font-medium">Go To Awards</p>
@@ -190,7 +191,7 @@
         </div>
 
         <!-- Text -->
-        <div class="card-Text pt-[42px] ml-[14px]">
+        <div class="card-Text pt-[42px] lg:w-[406px] w-auto">
           <div class="header">
             <p class="font-medium text-lg leading-[18px] text-[#217BF4]">Our Achievement</p>
             <p class="font-bold text-[#0A093D] text-4xl leading-[48px] mt-[10px]">We are Connecting You The Digital Life.</p>
@@ -210,16 +211,16 @@
 
     <!-- Features -->
     <section id="features" class="mt-[60px] bg-gradient-to-r from-[#F1F6FD] to-white">
-      <div class="container max-md:px-5 pt-[60px] pb-20">
-        <div class="header text-center w-[442px] mx-auto">
+      <div class="container px-5 lg:px-0 pt-[60px] pb-20">
+        <div class="header text-center md:w-[442px] w-auto mx-auto">
           <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Our Community</p>
           <p class="mt-2 text-[#0A093D] font-bold text-4xl leading-9">Community Main Feature</p>
-          <p class="mt-5 text-[#656464] font-normal text-base leading-7 w-[420px]">The wise man therefore always holds in these matters to this principle of selection.</p>
+          <p class="mt-5 text-[#656464] font-normal text-base leading-7 md:w-[420px] w-auto">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
         <div class="content mt-16 mx-10">
           <!-- item -->
           <div class="item flex lg:justify-between justify-center gap-5 lg:flex-nowrap flex-wrap">
-            <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+            <div class="flex flex-wrap justify-center lg:flex-nowrap lg:justify-between gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200 max-[320px]:px-4">
               <div class="icon">
                 <img src="../assets/group.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#5CA1FE] to-[#217BF4] rounded-3xl" />
               </div>
@@ -229,7 +230,7 @@
               </div>
             </div>
             <div class="item flex justify-between">
-              <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+              <div class="flex flex-wrap justify-center lg:flex-nowrap lg:justify-between gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200 max-[320px]:px-4">
                 <div class="icon">
                   <img src="../assets/group.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FF858A] to-[#F04148] rounded-3xl" />
                 </div>
@@ -242,7 +243,7 @@
           </div>
           <!-- item -->
           <div class="item flex lg:justify-between justify-center mt-11 gap-5 lg:flex-nowrap flex-wrap">
-            <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+            <div class="flex flex-wrap justify-center lg:flex-nowrap lg:justify-between gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200 max-[320px]:px-4">
               <div class="icon">
                 <img src="../assets/forum.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FFD085] to-[#FFAF2E] rounded-3xl" />
               </div>
@@ -252,7 +253,7 @@
               </div>
             </div>
             <div class="item flex justify-between">
-              <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+              <div class="flex flex-wrap justify-center lg:flex-nowrap lg:justify-between gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200 max-[320px]:px-4">
                 <div class="icon">
                   <img src="../assets/module.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#5CA1FE] to-[#217BF4] rounded-3xl" />
                 </div>
@@ -265,7 +266,7 @@
           </div>
           <!-- item -->
           <div class="item flex lg:justify-between justify-center mt-11 gap-5 lg:flex-nowrap flex-wrap">
-            <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+            <div class="flex flex-wrap justify-center lg:flex-nowrap lg:justify-between gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200 max-[320px]:px-4">
               <div class="icon">
                 <img src="../assets/builder.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FF858A] to-[#F04148] rounded-3xl" />
               </div>
@@ -275,7 +276,7 @@
               </div>
             </div>
             <div class="item flex justify-between">
-              <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+              <div class="flex flex-wrap justify-center lg:flex-nowrap lg:justify-between gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200 max-[320px]:px-4">
                 <div class="icon">
                   <img src="../assets/scroll.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FFD085] to-[#FFAF2E] rounded-3xl" />
                 </div>
@@ -292,17 +293,17 @@
 
     <!-- Our Members -->
     <section id="member" class="mt-10">
-      <div class="container max-md:px-5 py-[84px]">
+      <div class="container px-5 lg:px-0 py-[84px]">
         <div class="header">
-          <div class="text w-[454px] text-center mx-auto">
+          <div class="text md:w-[454px] w-auto text-center mx-auto">
             <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Valuable Team</p>
             <p class="text-[#0A093D] font-bold text-4xl leading-9 mt-[10px]">Our Active Members</p>
             <p class="text-[#656464] font-normal text-base leading-7 mt-[18px]">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
           </div>
-          <div class="button flex justify-center mt-[38px] gap-2 rounded-[14px] bg-[#217BF4]/[0.06] w-[490px] mx-auto py-2">
-            <a href="#" class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Newst</a>
-            <a href="#" class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Popular</a>
-            <a href="#" class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Active</a>
+          <div class="button flex justify-center mt-[38px] gap-2 rounded-[14px] bg-[#217BF4]/[0.06] sm:w-[490px] w-auto mx-auto py-2 sm:flex-row flex-col">
+            <button class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Newst</button>
+            <button class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Popular</button>
+            <button class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Active</button>
           </div>
         </div>
         <div class="members flex mt-11 lg:justify-between justify-center flex-wrap lg:flex-nowrap gap-5">
@@ -332,16 +333,19 @@
 
     <!-- CTA -->
     <section id="cta" class="mt-[46px] bg-[#E5F0FD]">
-      <div class="container max-md:px-5 flex lg:justify-between items-center justify-center lg:flex-nowrap flex-wrap-reverse gap-5 lg:py-0 py-5">
+      <div class="container px-5 lg:px-0 flex lg:justify-between items-center justify-center lg:flex-nowrap flex-wrap-reverse gap-5 lg:py-0 py-5">
+        <!-- Text -->
         <div class="text">
           <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Get Our Aplication</p>
-          <p class="font-bold text-[#0A093D] text-4xl leading-[52px] mt-[10px] w-[350px]">You Can Easily Find This App…!</p>
-          <p class="mt-[18px] text-[#656464] font-normal text-base leading-[26px] w-[340px]">I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.</p>
+          <p class="font-bold text-[#0A093D] text-4xl leading-[52px] mt-[10px] lg:w-[350px] w-auto">You Can Easily Find This App…!</p>
+          <p class="mt-[18px] text-[#656464] font-normal text-base leading-[26px] lg:w-[340px] w-auto">I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.</p>
           <div class="button-bottom flex items-center gap-5 mt-9">
             <a href="#"><img src="../assets/apple.png" alt="" /></a>
             <a href="#"><img src="../assets/playstore.png" alt="" /></a>
           </div>
         </div>
+
+        <!-- Image -->
         <div class="image">
           <img src="../assets/mobile muckup.png" alt="" />
         </div>
@@ -350,7 +354,7 @@
 
     <!-- Blog -->
     <section id="blog" class="mt-24">
-      <div class="container max-md:px-5 py-[34px]">
+      <div class="container px-5 lg:px-0 py-[34px]">
         <div class="header text-center mx-auto">
           <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Get Our Aplication</p>
           <p class="text-[#0A093D] font-bold text-4xl leading-9 mt-[10px]">Latest News</p>
@@ -413,9 +417,9 @@
 
     <!-- Footer 1-->
     <section id="footer1" class="mt-24 bg-[#2B2B39] text-white">
-      <div class="container max-md:px-5 py-[74px] flex lg:justify-between justify-center flex-wrap lg:flex-nowrap gap-5">
+      <div class="container px-5 lg:px-0 py-[74px] flex lg:justify-between justify-center flex-wrap lg:flex-nowrap gap-5">
         <div class="menu-bottom flex gap-[98px] flex-wrap lg:flex-nowrap justify-center lg:justify-between">
-          <div class="flex justify-center lg:flex-nowrap gap-[98px]">
+          <div class="flex justify-center lg:flex-nowrap sm:gap-[98px] gap-10">
             <ul>
               <li class="font-medium text-xl leading-5">Home</li>
               <li class="mt-[22px] font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Home</li>
@@ -431,7 +435,7 @@
               <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Help Center</li>
             </ul>
           </div>
-          <div class="flex justify-center lg:flex-nowrap gap-[98px]">
+          <div class="flex justify-center lg:flex-nowrap sm:gap-[98px] gap-10">
             <ul>
               <li class="font-medium text-xl leading-5">Community</li>
               <li class="mt-[22px] font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">NewsFeed</li>
@@ -471,7 +475,7 @@
 
     <!-- Footer2 -->
     <section id="footer2" class="bg-[#20202D]">
-      <div class="container max-md:px-5 py-[30px] flex lg:justify-between justify-center flex-wrap lg:flex-nowrap items-center gap-5">
+      <div class="container px-5 lg:px-0 py-[30px] flex lg:justify-between justify-center flex-wrap lg:flex-nowrap items-center gap-5">
         <p class="text-[#F6F6F6] font-normal text-sm leading-[14px]">Besnik Creative Agency.</p>
         <div class="logo flex items-center gap-[6px]">
           <img src="../assets/icon/Group.png" alt="" />
