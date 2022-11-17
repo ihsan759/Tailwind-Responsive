@@ -9,7 +9,7 @@ module.exports = {
       mono: ["Inter"],
     },
     container: {
-      padding: "20px",
+      // padding: "20px",
       center: true,
       screens: {
         sm: "600px",
