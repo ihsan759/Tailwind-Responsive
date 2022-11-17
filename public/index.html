@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="../assets/icon/Group.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Netbook</title>
+  </head>
+  <body>
+    <!-- header -->
+    <nav id="header" class="border-b-2 pb-[18px] w-full top-0 fixed bg-white/90 backdrop-blur z-50">
+      <div class="container flex flex-wrap lg:flex-nowrap pt-[30px] lg:gap-[70px] items-center justify-between gap-5 px-5">
+        <div class="img-box">
+          <img src="../assets/logo.png" alt="" />
+        </div>
+
+        <!-- button -->
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <div id="navbar-default" class="hidden lg:block w-full">
+          <div class="flex items-center md:flex-row justify-between flex-col gap-5">
+            <!-- left -->
+            <div class="menu-navigation flex gap-[70px] items-center">
+              <ul class="flex gap-8 flex-col md:flex-row items-center">
+                <li>
+                  <a href="#hero" class="active">Home</a>
+                </li>
+                <li class="flex gap-[5px] items-center">
+                  <a href="">Community</a>
+                  <img src="../assets/CaretDown.png" alt="" />
+                </li>
+                <li>
+                  <a href="#blog">Blog</a>
+                </li>
+                <li>
+                  <a href="">Events</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- right -->
+            <div class="menu-action flex gap-[42px] flex-col md:flex-row">
+              <div class="search-box flex items-center gap-2 border-b-2 w-[105px]">
+                <img src="../assets/MagnifyingGlass.png" alt="" class="w-3" />
+                <form action="#">
+                  <input type="text" name="" id="" placeholder="Search Here..." class="focus:ring-transparent w-20 placeholder:text-xs bg-transparent border-none px-0" />
+                </form>
+              </div>
+              <div class="button-box bg-blue-600 rounded-2xl">
+                <button type="submit" class="px-11 py-[18px] text-xs text-white">Log In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="hero" class="bg-gradient-to-br from-[#ffffff] to-[#d4e7fe] py-[100px]">
+      <div class="container flex flex-wrap-reverse lg:flex-nowrap pt-[72px] justify-center lg:justify-between items-center gap-5">
+        <!-- left -->
+        <div class="left">
+          <div class="button-box-top">
+            <button class="text-blue-600 px-[30px] py-3 text-xs rounded-2xl bg-[#217BF4]/10">Netbook community</button>
+          </div>
+          <div class="text-hero">
+            <p class="text-[56px] text-[#0A093D] font-bold leading-[56px] mt-5">Your Solutions For Community!</p>
+            <p class="text-lg text-[#656464] mt-[18px] max-w-lg">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+          </div>
+          <div class="button-box-bottom mt-[42px]">
+            <button class="px-[42px] py-6 text-white bg-blue-500 rounded-2xl text-sm leading-[14px] border mr-[18px]">About More</button>
+            <button class="px-[42px] py-6 text-blue-600 bg-white rounded-2xl text-sm leading-[14px] border-blue-400 border">Invite Friend</button>
+          </div>
+        </div>
+        <div class="img-hero">
+          <img src="../assets/Hero.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+      <div class="container flex mt-[34px] flex-wrap-reverse gap-5 lg:flex-nowrap items-center justify-center lg:justify-between pt-24 pb-[34px]">
+        <div class="text w-[406px]">
+          <p class="text-[#217BF4] text-lg leading-[18px]">Whats Netboks?</p>
+          <p class="text-[#0A093D] text-4xl leading-[48px] mt-[10px] font-bold">Why Join to Netbook Social Network?</p>
+          <p class="text-[#656464] font-normal text-base leading-7 mt-4">Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</p>
+          <div class="list mt-9">
+            <div class="item-1 flex gap-3">
+              <img src="../assets/icon/dot.svg" alt="" />
+              <p>Groups</p>
+            </div>
+            <div class="item-2 flex gap-3 mt-4">
+              <img src="../assets/icon/dot.svg" alt="" />
+              <p>Messages</p>
+            </div>
+            <div class="item-3 flex gap-3 mt-4">
+              <img src="../assets/icon/dot.svg" alt="" />
+              <p>Share</p>
+            </div>
+          </div>
+        </div>
+        <div class="image flex gap-7 items-center">
+          <img src="../assets/video.png" alt="" class="h-[368px]" />
+          <div class="img-vertical flex flex-col">
+            <img src="../assets/laptop.png" alt="" class="h-[238px]" />
+            <img src="../assets/kabel.png" alt="" class="mt-8 h-[238px]" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievement -->
+    <section id="achievement" class="mt-5">
+      <div class="container flex flex-wrap-reverse lg:flex-nowrap gap-5 lg:justify-between justify-center pt-[74px] pb-[84px]">
+        <!-- Achievements -->
+        <div class="card-achievement pt-[42px] pb-10 pl-11 pr-[18px] hover:shadow-lg duration-200 border rounded-[14px] bg-white">
+          <div class="header flex gap-3 items-center">
+            <img src="../assets/Star.png" alt="" />
+            <p class="font-medium text-xl leading-5 text-[#0A093D]">4.8 Rating</p>
+          </div>
+          <div class="body-members flex items-center mt-8 gap-4">
+            <div class="image flex items-center -space-x-2">
+              <img src="../assets/kucing1.jpg" alt="" class="w-6 h-6 rounded-full shadow-lg ring-2 ring-white z-20 dark:ring-slate-900" />
+              <img src="../assets/kucing2.jpg" alt="" class="w-6 h-6 rounded-full shadow-lg ring-2 ring-white z-30 dark:ring-slate-900" />
+              <img src="../assets/kucing3.jpg" alt="" class="w-6 h-6 rounded-full i shadow-lg ring-2 ring-white z-40 dark:ring-slate-900" />
+            </div>
+            <p class="font-semibold text-base leading-[18px]"><span class="text-[#217BF4]">+836k</span> Members</p>
+          </div>
+          <div class="body-text">
+            <p class="text-[#8C8C8C] text-base font-normal mt-10 w-[274px]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+          </div>
+          <a class="bottom flex gap-2 mt-10" href="#">
+            <p class="hover:text-[#217BF4] text-[#4A4A56] text-base leading-4 font-medium">Join Our Community</p>
+            <img src="../assets/icon/ArrowRight.svg" alt="" />
+          </a>
+        </div>
+
+        <!-- Awards -->
+        <div class="card-Awards pt-[42px] pb-10 pl-11 pr-[18px] hover:shadow-lg duration-200 border rounded-[14px]">
+          <div class="header flex gap-3 items-center">
+            <img src="../assets/Trophy.png" alt="" />
+            <p class="font-medium text-xl leading-5 text-[#0A093D]">Awards</p>
+          </div>
+          <div class="body-members flex items-center mt-8 gap-4">
+            <img src="../assets/kucing1.jpg" alt="" class="w-6 h-6 rounded-full shadow-lg ring-2 ring-white z-20 dark:ring-slate-900" />
+            <p class="font-semibold text-base leading-[18px]">Best of <span class="text-[#217BF4]">2021</span> on Github</p>
+          </div>
+          <div class="body-text">
+            <p class="text-[#8C8C8C] text-base font-normal mt-10 w-[274px]">More than 2 billion we people over countries use socibooks we to stay in touch with friends.</p>
+          </div>
+          <a class="bottom flex gap-2 mt-10" href="#">
+            <p class="hover:text-[#217BF4] text-[#4A4A56] text-base leading-4 font-medium">Go To Awards</p>
+            <img src="../assets/icon/ArrowRightBlack.svg" alt="" />
+          </a>
+        </div>
+
+        <!-- Text -->
+        <div class="card-Text pt-[42px] ml-[14px]">
+          <div class="header">
+            <p class="font-medium text-lg leading-[18px] text-[#217BF4]">Our Achievement</p>
+            <p class="font-bold text-[#0A093D] text-4xl leading-[48px] mt-[10px]">We are Connecting You The Digital Life.</p>
+          </div>
+          <div class="body-text">
+            <p class="text-[#656464] text-base leading-7 font-normal mt-[18px]">The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.</p>
+          </div>
+          <div class="bottom-button mt-[38px]">
+            <button class="flex bg-[#217BF4] rounded-[14px] gap-5 font-medium text-sm leading-[14px] text-white py-5 px-[36px]">
+              Discover me
+              <img src="../assets/icon/ArrowRightWhite.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mt-[60px] bg-gradient-to-r from-[#F1F6FD] to-white">
+      <div class="container pt-[60px] pb-20">
+        <div class="header text-center w-[442px] mx-auto">
+          <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Our Community</p>
+          <p class="mt-2 text-[#0A093D] font-bold text-4xl leading-9">Community Main Feature</p>
+          <p class="mt-5 text-[#656464] font-normal text-base leading-7 w-[420px]">The wise man therefore always holds in these matters to this principle of selection.</p>
+        </div>
+        <div class="content mt-16 mx-10">
+          <!-- item -->
+          <div class="item flex lg:justify-between justify-center gap-5 lg:flex-nowrap flex-wrap">
+            <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+              <div class="icon">
+                <img src="../assets/group.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#5CA1FE] to-[#217BF4] rounded-3xl" />
+              </div>
+              <div class="text">
+                <p class="text-[#2F2C4A] text-2xl leading-[26px] font-semibold">Members, Friends</p>
+                <p class="mt-[14px] text-[#656464] font-normal text-base leading-[26px] max-w-[316px]">Members, Friends Connection ( like followers ), Private Message</p>
+              </div>
+            </div>
+            <div class="item flex justify-between">
+              <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+                <div class="icon">
+                  <img src="../assets/group.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FF858A] to-[#F04148] rounded-3xl" />
+                </div>
+                <div class="text">
+                  <p class="text-[#2F2C4A] text-2xl leading-[26px] font-semibold">Groups</p>
+                  <p class="mt-[14px] text-[#656464] font-normal text-base leading-[26px] max-w-[316px]">Your users can create groups to let other users to join and talk</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="item flex lg:justify-between justify-center mt-11 gap-5 lg:flex-nowrap flex-wrap">
+            <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+              <div class="icon">
+                <img src="../assets/forum.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FFD085] to-[#FFAF2E] rounded-3xl" />
+              </div>
+              <div class="text">
+                <p class="text-[#2F2C4A] text-2xl leading-[26px] font-semibold">Forum</p>
+                <p class="mt-[14px] text-[#656464] font-normal text-base leading-[26px] max-w-[316px]">Forum is ready by BBPress. Your users can make topics and talk.</p>
+              </div>
+            </div>
+            <div class="item flex justify-between">
+              <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+                <div class="icon">
+                  <img src="../assets/module.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#5CA1FE] to-[#217BF4] rounded-3xl" />
+                </div>
+                <div class="text">
+                  <p class="text-[#2F2C4A] text-2xl leading-[26px] font-semibold">Custom Module</p>
+                  <p class="mt-[14px] text-[#656464] font-normal text-base leading-[26px] max-w-[316px]">You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item -->
+          <div class="item flex lg:justify-between justify-center mt-11 gap-5 lg:flex-nowrap flex-wrap">
+            <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+              <div class="icon">
+                <img src="../assets/builder.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FF858A] to-[#F04148] rounded-3xl" />
+              </div>
+              <div class="text">
+                <p class="text-[#2F2C4A] text-2xl leading-[26px] font-semibold">List Builder</p>
+                <p class="mt-[14px] text-[#656464] font-normal text-base leading-[26px] max-w-[316px]">Members, Groups list can be modified by drag & drop live builder.</p>
+              </div>
+            </div>
+            <div class="item flex justify-between">
+              <div class="flex gap-9 pl-10 pr-16 pt-10 pb-11 rounded-[14px] shadow-sm bg-white hover:shadow-lg duration-200">
+                <div class="icon">
+                  <img src="../assets/scroll.png" alt="" class="px-4 py-5 bg-gradient-to-br from-[#FFD085] to-[#FFAF2E] rounded-3xl" />
+                </div>
+                <div class="text">
+                  <p class="text-[#2F2C4A] text-2xl leading-[26px] font-semibold">List Scroll Effects</p>
+                  <p class="mt-[14px] text-[#656464] font-normal text-base leading-[26px] max-w-[316px]">8 different scroll effects are ready. You can always change by your tastes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Members -->
+    <section id="member" class="mt-10">
+      <div class="container py-[84px]">
+        <div class="header">
+          <div class="text w-[454px] text-center mx-auto">
+            <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Valuable Team</p>
+            <p class="text-[#0A093D] font-bold text-4xl leading-9 mt-[10px]">Our Active Members</p>
+            <p class="text-[#656464] font-normal text-base leading-7 mt-[18px]">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
+          </div>
+          <div class="button flex justify-center mt-[38px] gap-2 rounded-[14px] bg-[#217BF4]/[0.06] w-[490px] mx-auto py-2">
+            <a href="#" class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Newst</a>
+            <a href="#" class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Popular</a>
+            <a href="#" class="text-[#2F2C4A] opacity-80 text-base leading-4 font-medium py-5 px-[50px] hover:text-white hover:opacity-100 hover:bg-[#217BF4] rounded-[14px] hover:font-semibold duration-200">Active</a>
+          </div>
+        </div>
+        <div class="members flex mt-11 lg:justify-between justify-center flex-wrap lg:flex-nowrap gap-5">
+          <div class="card text-center py-[30px] px-[50px] rounded-[14px] shadow hover:shadow-xl duration-200">
+            <img src="../assets/fahim.png" alt="" />
+            <p class="text-[#2F2C4A] text-2xl leading-[26px] mt-[30px] font-semibold">Fahim Rahman</p>
+            <p class="mt-[14px] text-[#656464] font-normal text-base leading-4">@rahman</p>
+          </div>
+          <div class="card text-center py-[30px] px-[50px] rounded-[14px] shadow hover:shadow-xl duration-200">
+            <img src="../assets/kazi.png" alt="" />
+            <p class="text-[#2F2C4A] text-2xl leading-[26px] mt-[30px] font-semibold">Kazi Rahman</p>
+            <p class="mt-[14px] text-[#656464] font-normal text-base leading-4">@Rahman</p>
+          </div>
+          <div class="card text-center py-[30px] px-[50px] rounded-[14px] shadow hover:shadow-xl duration-200">
+            <img src="../assets/ali.png" alt="" />
+            <p class="text-[#2F2C4A] text-2xl leading-[26px] mt-[30px] font-semibold">Masterero Ali</p>
+            <p class="mt-[14px] text-[#656464] font-normal text-base leading-4">@Master</p>
+          </div>
+          <div class="card text-center py-[30px] px-[50px] rounded-[14px] shadow hover:shadow-xl duration-200">
+            <img src="../assets/karon.png" alt="" />
+            <p class="text-[#2F2C4A] text-2xl leading-[26px] mt-[30px] font-semibold">Alia Karon</p>
+            <p class="mt-[14px] text-[#656464] font-normal text-base leading-4">@Alia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="mt-[46px] bg-[#E5F0FD]">
+      <div class="container flex lg:justify-between items-center justify-center lg:flex-nowrap flex-wrap-reverse gap-5 lg:py-0 py-5">
+        <div class="text">
+          <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Get Our Aplication</p>
+          <p class="font-bold text-[#0A093D] text-4xl leading-[52px] mt-[10px] w-[350px]">You Can Easily Find This App…!</p>
+          <p class="mt-[18px] text-[#656464] font-normal text-base leading-[26px] w-[340px]">I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.</p>
+          <div class="button-bottom flex items-center gap-5 mt-9">
+            <a href="#"><img src="../assets/apple.png" alt="" /></a>
+            <a href="#"><img src="../assets/playstore.png" alt="" /></a>
+          </div>
+        </div>
+        <div class="image">
+          <img src="../assets/mobile muckup.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="mt-24">
+      <div class="container py-[34px]">
+        <div class="header text-center mx-auto">
+          <p class="text-[#217BF4] font-medium text-lg leading-[18px]">Get Our Aplication</p>
+          <p class="text-[#0A093D] font-bold text-4xl leading-9 mt-[10px]">Latest News</p>
+        </div>
+        <div class="content flex items-center lg:justify-between justify-center flex-wrap lg:flex-nowrap gap-10 mt-20">
+          <div class="card max-w-[340px]">
+            <div class="head-image max-w-[340px] h-[330px] overflow-hidden rounded-[20px]">
+              <img src="../assets/blog1.png" alt="" />
+            </div>
+            <div class="body flex gap-[14px] items-center mt-[24px] ml-[14px]">
+              <div class="image-line -mt-16">
+                <img src="../assets/line.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="text-[#2F2C4A] text-xl leading-8 font-semibold">It Does Not Matter Hows Slowly go as Long</p>
+                <div class="button-bottom flex gap-2 mt-6 items-center">
+                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-150">Continue Reading</a>
+                  <img src="../assets/icon/ArrowRight.svg" alt="" class="w-[10px] h-[10px]" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card max-w-[340px]">
+            <div class="head-image max-w-[340px] h-[330px] overflow-hidden rounded-[20px]">
+              <img src="../assets/blog2.png" alt="" />
+            </div>
+            <div class="body flex gap-[14px] items-center mt-[24px] ml-[14px]">
+              <div class="image-line -mt-16">
+                <img src="../assets/line.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="text-[#2F2C4A] text-xl leading-8 font-semibold">Netbook Network Added New Photo Filter</p>
+                <div class="button-bottom flex gap-2 mt-6 items-center">
+                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-150">Continue Reading</a>
+                  <img src="../assets/icon/ArrowRight.svg" alt="" class="w-[10px] h-[10px]" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card max-w-[340px]">
+            <div class="head-image max-w-[340px] h-[330px] overflow-hidden rounded-[20px]">
+              <img src="../assets/blog3.png" alt="" />
+            </div>
+            <div class="body flex gap-[14px] items-center mt-[24px] ml-[14px]">
+              <div class="image-line -mt-16">
+                <img src="../assets/line.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="text-[#2F2C4A] text-xl leading-8 font-semibold">We Optimised Netbooks Better Navigation</p>
+                <div class="button-bottom flex gap-2 mt-6 items-center">
+                  <a href="#" class="text-[#656464] font-normal text-base leading-4 hover:text-[#217BF4] hover:mr-4 duration-150">Continue Reading</a>
+                  <img src="../assets/icon/ArrowRight.svg" alt="" class="w-[10px] h-[10px]" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer 1-->
+    <section id="footer1" class="mt-24 bg-[#2B2B39] text-white">
+      <div class="container py-[74px] flex lg:justify-between justify-center flex-wrap lg:flex-nowrap gap-5">
+        <div class="menu-bottom flex gap-[98px] flex-wrap lg:flex-nowrap justify-center lg:justify-between">
+          <div class="flex justify-center lg:flex-nowrap gap-[98px]">
+            <ul>
+              <li class="font-medium text-xl leading-5">Home</li>
+              <li class="mt-[22px] font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Home</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Community</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Events</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Contact</li>
+            </ul>
+            <ul>
+              <li class="font-medium text-xl leading-5">Resources</li>
+              <li class="mt-[22px] font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Blog</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">News</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Guides</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Help Center</li>
+            </ul>
+          </div>
+          <div class="flex justify-center lg:flex-nowrap gap-[98px]">
+            <ul>
+              <li class="font-medium text-xl leading-5">Community</li>
+              <li class="mt-[22px] font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">NewsFeed</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Profile</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Friends</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Forums</li>
+            </ul>
+            <ul>
+              <li class="font-medium text-xl leading-5">Main links</li>
+              <li class="mt-[22px] font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Members</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Activity</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Groups</li>
+              <li class="font-normal text-[#E7E7E7] text-base leading-[46px] tracking-[0.0125em]">Private Group</li>
+            </ul>
+          </div>
+        </div>
+        <div class="subscribe-bottom">
+          <p class="font-medium text-xl leading-8 w-full">Subscribe Cirkle Newsletter</p>
+          <p class="mt-[18px] w-[300px] text-[#E7E7E7] text-base leading-7">Subscribe to be the first one to know about updates. Enter your email</p>
+
+          <!-- Button Subscribe -->
+          <div class="button-subscribe mt-8 lg:border rounded-xl border-white/[0.85] w-full">
+            <form action="" class="flex items-center flex-wrap lg:flex-nowrap lg:gap-0 gap-5">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="Email Address"
+                class="lg:focus:ring-transparent focus:ring-white/[0.85] placeholder:text-[#717179] border border-white/[0.85] lg:border-none py-[18px] px-6 bg-transparent w-full placeholder:text-sm placeholder:leading-3 text-sm leading-3 font-normal rounded-xl"
+              />
+              <button type="submit" class="bg-white text-[#2B2B39] py-[18px] px-6 rounded-xl border border-white/[0.85] font-medium text-base leading-4 lg:w-auto w-full">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer2 -->
+    <section id="footer2" class="bg-[#20202D]">
+      <div class="container py-[30px] flex lg:justify-between justify-center flex-wrap lg:flex-nowrap items-center gap-5">
+        <p class="text-[#F6F6F6] font-normal text-sm leading-[14px]">Besnik Creative Agency.</p>
+        <div class="logo flex items-center gap-[6px]">
+          <img src="../assets/icon/Group.png" alt="" />
+          <p class="font-semibold text-2xl leading-6 text-white">Netbook</p>
+        </div>
+        <div class="sosmed-bottom flex gap-2 items-center flex-wrap lg:flex-nowrap">
+          <a href="#">
+            <img src="../assets/icon/twitter.png" alt="" class="p-2 bg-white rounded-full" />
+          </a>
+          <a href="#">
+            <img src="../assets/icon/instagram.png" alt="" class="p-2 bg-white rounded-full" />
+          </a>
+          <a href="#">
+            <img src="../assets/icon/facebook.png" alt="" class="p-2 bg-white rounded-full" />
+          </a>
+          <a href="#">
+            <img src="../assets/icon/instagram.png" alt="" class="p-2 bg-white rounded-full" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+  </body>
+</html>
